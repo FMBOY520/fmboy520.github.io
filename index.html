@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -------------------- logo -------------------- -->
+    <!-- <link rel="shortcut icon" href="./resources/image/M.jpg" type="image/x-icon"> -->
+    <link rel="icon" href="./resources/image/M.jpg">
+    <!-- -------------------- **** -------------------- -->
+    <!-- -------------------- css -------------------- -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- -------------------- **** -------------------- -->
+    <!-- -------------------- title -------------------- -->
+    <title>FMBOY</title>
+</head>
+
+<body>
+    <!-- -------------------- main -------------------- -->
+    <main id="App">
+        <!-- -------------------- head -------------------- -->
+        <div class="head">
+            <h1>肥猫主栈</h1>
+            <!-- 导航栏 -->
+            <div class="nav">
+                <a href="./CommonWeb.html">常用网站</a>
+                <a href="">个人博客</a>
+                <a href="">关于栈长</a>
+            </div>
+            <!-- 搜索 -->
+            <form class="search" action="https://www.baidu.com/s">
+                <input class="input1" type="text" class="search-box" name="word" placeholder="百度搜索">
+                <input class="input2" type="submit" class="search-btn" value="搜索">
+            </form>
+            <!-- User -->
+            <div class="User">
+                <img src="./resources/image/V.jpg" alt="">
+                <span>FatCat-BOY</span>
+            </div>
+        </div>
+        <!-- -------------------- **** -------------------- -->
+        <!-- -------------------- body -------------------- -->
+        <div class="body">
+            <!-- -------------------- 轮播图+内容 -------------------- -->
+            <div class="body-carousel">
+                <!-- -------------------- 轮播图 -------------------- -->
+                <div class="body-carousel-img">
+                    <ul>
+                        <li v-for="(item,index) in imgList" :style="{backgroundImage:item.img}"></li>
+                    </ul>
+                </div>
+                <!-- -------------------- 内容 -------------------- -->
+                <div class="body-carousel-content">
+                    <div class="left">
+                        <div>
+                            <ul>
+                                <li v-for="(item,index) in carouselList">
+                                    <a :href="item.url">{{item.text}}<span>&gt;</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right"></div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------- **** -------------------- -->
+        <!-- -------------------- foot -------------------- -->
+        <div class="foot">
+            <p class="foot-copyright">© 2024 版权所有 FatCat-BOY</p>
+            <p class="foot-date">&lt;2024.01.01--2024.01.01&gt;</p>
+        </div>
+        <!-- -------------------- **** -------------------- -->
+    </main>
+    <!-- -------------------- **** -------------------- -->
+    <!-- -------------------- script -------------------- -->
+    <script src="../Web前端资源仓库/vue/vue@2.7.14/vue.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
