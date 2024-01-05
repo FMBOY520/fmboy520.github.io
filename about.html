@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="./css/Web-head.css">
     <link rel="stylesheet" href="./css/Web-body.css">
     <link rel="stylesheet" href="./css/Web-foot.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/about.css">
     <!-- -------------------- **** -------------------- -->
 
 
     <!-- -------------------- title -------------------- -->
-    <title>FMBOY</title>
+    <title>关于栈长</title>
     <!-- -------------------- **** -------------------- -->
 
 </head>
@@ -34,8 +34,8 @@
             <h1>肥猫主栈</h1>
             <!-- 导航栏 -->
             <div class="nav">
-                <a href="./index.html" class="current">首页</a>
-                <a href="./about.html">关于栈长</a>
+                <a href="./index.html">首页</a>
+                <a href="./about.html" class="current">关于栈长</a>
             </div>
             <!-- 搜索 -->
             <form class="search" action="https://www.baidu.com/s" target="_blank">
@@ -53,46 +53,17 @@
 
         <!-- -------------------- body -------------------- -->
         <div class="body">
-
-            <!-- -------------------- 轮播图+内容 -------------------- -->
-            <div class="body-carousel">
-
-                <!-- -------------------- 轮播图 -------------------- -->
-                <div class="body-carousel-img">
-                    <div>
-                        <img v-for="(item, index) in imgList" :src="item.img" alt="图片加载失败">
-                    </div>
-                </div>
-                <!-- -------------------- 内容 -------------------- -->
-                <div class="body-carousel-content">
-                    <div class="left">
-                        <div>
-                            <ul>
-                                <li v-for="(item,index) in carouselList">
-                                    <a :href="item.url" target="_blank">{{item.text}}<span>&gt;</span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <h4>JS源码</h4>
-                        <ul>
-                            <li>
-                                <a href="https://cdn.jsdelivr.net/npm/vue/" target="_blank">vue<span>&gt;</span></a>
-                            </li>
-                            <li>
-                                <a href="https://cdn.jsdelivr.net/npm/axios/" target="_blank">axios<span>&gt;</span></a>
-                            </li>
-                        </ul>
-                        <a href="./CommonWeb.html" style="display: inline-block;">查看更多</a>
-                    </div>
-                </div>
+            <h1 class="body-title">关于栈长</h1>
+            <div class="body-contact">
+                <p>联系方式</p>
+                <p>这里是我的联系方式哦</p>
+                <p>QQ邮箱：FM_BOY@qq.com</p>
+                <p>微软邮箱：FMBOY520@outlook.com</p>
+                <img src="./resources/image/QR/account/Standard Edition.png" alt="">
             </div>
-            <!-- -------------------- **** -------------------- -->
 
             <br><br><hr>
             <h2>暂未更新。。。</h2>
-
         </div>
         <!-- -------------------- **** -------------------- -->
 
@@ -110,7 +81,7 @@
 
     <!-- -------------------- script -------------------- -->
     <script src="https://FMBOY.gitee.io/resources/vue/vue@2.7.14/vue.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/about.js"></script>
     <!-- -------------------- **** -------------------- -->
 
 </body>
