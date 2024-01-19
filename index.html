@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- -------------------- logo -------------------- -->
-    <link rel="shortcut icon" href="./resources/image/V.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
     <!-- -------------------- **** -------------------- -->
 
 
     <!-- -------------------- css -------------------- -->
-    <link rel="stylesheet" href="./css/Web-head.css">
-    <link rel="stylesheet" href="./css/Web-body.css">
-    <link rel="stylesheet" href="./css/Web-foot.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
     <!-- -------------------- **** -------------------- -->
 
@@ -27,15 +25,15 @@
 <body>
 
     <!-- -------------------- main -------------------- -->
-    <main id="App">
+    <main id="app">
 
         <!-- -------------------- head -------------------- -->
         <div class="head">
             <h1>肥猫主栈</h1>
             <!-- 导航栏 -->
             <div class="nav">
-                <a href="./index.html" class="current">首页</a>
-                <a href="./about.html">关于栈长</a>
+                <a href="javascript:;" class="current">首页</a>
+                <a href="./page/about">关于栈长</a>
             </div>
             <!-- 搜索 -->
             <form class="search" action="https://www.baidu.com/s" target="_blank">
@@ -44,7 +42,7 @@
             </form>
             <!-- User -->
             <div class="User">
-                <img src="./resources/image/V.jpg" alt="">
+                <img src="./public/resources/image/V.jpg" alt="">
                 <span>FatCat-BOY</span>
             </div>
         </div>
@@ -67,24 +65,22 @@
                 <div class="body-carousel-content">
                     <div class="left">
                         <div>
+                            <h4>MY常用站</h4>
                             <ul>
-                                <li v-for="(item,index) in carouselList">
+                                <li v-for="(item,index) in commonList">
                                     <a :href="item.url" target="_blank">{{item.text}}<span>&gt;</span></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="right">
-                        <h4>JS源码</h4>
+                        <h4>工具</h4>
                         <ul>
-                            <li>
-                                <a href="https://cdn.jsdelivr.net/npm/vue/" target="_blank">vue<span>&gt;</span></a>
-                            </li>
-                            <li>
-                                <a href="https://cdn.jsdelivr.net/npm/axios/" target="_blank">axios<span>&gt;</span></a>
+                            <li v-for="(item,index) in toolsList">
+                                <a :href="item.url" target="_blank">{{item.text}}<span>&gt;</span></a>
                             </li>
                         </ul>
-                        <a href="./CommonWeb.html" style="display: inline-block;">查看更多</a>
+                        <a href="./page/CommonWeb" style="display: inline-block;">查看更多</a>
                     </div>
                 </div>
             </div>
@@ -92,7 +88,7 @@
 
             <br><br>
             <hr>
-            <h2>暂未更新。。。</h2>
+            <h2>😎😎😎😎</h2>
 
         </div>
         <!-- -------------------- **** -------------------- -->
@@ -101,7 +97,7 @@
         <!-- -------------------- foot -------------------- -->
         <div class="foot">
             <p class="foot-copyright">© 2024 版权所有 FatCat-BOY</p>
-            <p class="foot-date">&lt;2024.01.01--2024.01.04&gt;</p>
+            <p class="foot-date">&lt;2024.01.01--2024.01.20&gt;</p>
         </div>
         <!-- -------------------- **** -------------------- -->
 
