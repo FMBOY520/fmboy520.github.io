@@ -1,122 +1,276 @@
-/* -------------------- **** -------------------- */
-/* -------------------- main -------------------- */
-/* -------------------- body -------------------- */
-.body {
-    height: 680px;
+/* -------------------- ----- -------------------- */
+/* -------------------- FMBOY -------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
-/* ---------- 轮播图+内容 ---------- */
-.body-carousel {
-    position: relative;
-    width: 100%;
-    height: 520px;
-    background-color: #7a7a7a;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-/* ----- 轮播图 ----- */
-.body-carousel-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.body-carousel-img div {
-    position: relative;
-    left: 0;
-    width: 500%;
-    height: 100%;
-    transition: .8s;
-}
-
-.body-carousel-img img {
-    float: left;
-    width: 20%;
-    height: 100%;
-}
-
-/* ----- 内容 ----- */
-.body-carousel-content {
-    position: relative;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-}
-
-/* 左部分 */
-.body-carousel-content .left {
-    float: left;
-    overflow: hidden;
-    width: 220px;
-    height: 400px;
-    border-radius: 20px;
-    background-color: #1a1a1a50;
-}
-
-.body-carousel-content .left div {
-    overflow: auto;
-    width: 100%;
-    height: 100%;
-}
-
-.body-carousel-content .left div h4 {
-    margin: 20px;
-    font-size: 20px;
-    text-align: center;
-}
-
-.body-carousel-content .left a {
-    display: block;
-    margin: 10px;
-    padding: 10px;
+body {
     color: #fff;
-    background-color: rgba(250, 250, 250, 0.2);
+    background-color: #000;
+}
+
+#app {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../public/resources/image/background/nebula.jpg');
+    background-size: 100% 100%;
+}
+
+/* ---------- head ---------- */
+.head {
+    display: flex;
+    padding: 0 20px;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    background-color: #00000020;
+}
+
+.head-box {
+    width: 100%;
+    height: 50px;
+}
+
+.head-box-list,
+.head-box-user {
+    height: 100%;
+}
+
+.head-box-list {
+    float: left;
+    width: 50%;
+}
+
+.head-box-list a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 15px;
+    background-color: #55555550;
     border-radius: 10px;
 }
 
-.body-carousel-content .left span {
+.head-box-list a:hover {
+    color: #ff9f00;
+    background-color: #99999950;
+}
+
+.head-box-user {
     float: right;
+    width: 50%;
+    text-align: right;
 }
 
-.body-carousel-content .left a:hover {
-    color: #ffa500;
-    background-color: rgba(250, 250, 250, 0.5);
+.head-box-user img {
+    height: 100%;
+    border-radius: 50%;
+    vertical-align: middle;
 }
 
-/* 右部分 */
-.body-carousel-content .right {
-    float: right;
-    width: 280px;
-    height: 400px;
-    border-radius: 20px;
-    background-color: #1a1a1a50;
-}
-
-.body-carousel-content .right h4 {
-    margin: 20px;
-    color: #ffa500;
+.head-box-user span {
+    margin: 0 5px;
     font-size: 20px;
-    text-align: center;
+    font-weight: 600;
 }
 
-.body-carousel-content .right a {
-    display: block;
-    margin: 10px;
-    padding: 10px;
-    color: #ffa500;
-    background-color: #ffd28050;
+/* ---------- main ---------- */
+.main {
+    width: 100%;
+    height: 80%;
+    overflow: auto;
+}
+
+/* main-title */
+.main-title {
+    display: flex;
+    width: 100%;
+    height: 32%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.main-title h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.main-title h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* main-search */
+.main-search {
+    display: flex;
+    padding: 50px 0;
+    width: 100%;
+    height: 28%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-search-box {
+    width: 50%;
+}
+
+.main-search form {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main-search form input {
+    height: 100%;
+    outline: none;
+    border: none;
+}
+
+.main-search form input:nth-child(1) {
+    float: left;
+    padding: 0 15px;
+    width: 80%;
+    color: #fff;
+    font-size: 16px;
+    background-color: #ffffff50;
+}
+
+.main-search form input:nth-child(1)::placeholder {
+    color: #ececec;
+}
+
+.main-search form input:nth-child(2) {
+    float: right;
+    width: 20%;
+    color: #fff;
+    font-size: 18px;
+    background-color: #00000080;
+    cursor: pointer;
+}
+
+.main-search form input:nth-child(2):hover {
+    background-color: #00000095;
+}
+
+.main-search .main-search-list {
+    margin: 5px 0;
+    text-align: center;
+    background-color: #00000050;
     border-radius: 10px;
 }
 
-.body-carousel-content .right span {
-    float: right;
+.main-search a {
+    display: inline-block;
+    margin: 0 5px;
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
 }
 
-.body-carousel-content .right a:hover {
-    color: #ffe2ac;
-    background-color: #ffd28080;
+.list-btn-on {
+    border-bottom: 2px solid #ff9f00;
 }
 
-/* -------------------- **** -------------------- */
-/* ---------------------------------------------- */
+/* main-tag */
+.main-tag {
+    width: 100%;
+    height: 40%;
+    overflow: auto;
+}
+
+.main-tag-list {
+    margin: 0 auto;
+    width: 65%;
+}
+
+.main-tag-list .box {
+    display: flex;
+    margin: 20px 0;
+    width: 100%;
+    height: 60px;
+    justify-content: space-around;
+    /* background-color: pink; */
+}
+
+.main-tag-list a {
+    display: flex;
+    margin: 0 10px;
+    width: 80px;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.main-tag-list a:hover {
+    transform: scale(1.2);
+    background-color: #ffffff20;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 10px;
+}
+
+.main-tag-list a img {
+    width: 25px;
+    height: 25px;
+}
+
+.main-tag-list a p {
+    width: 65px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ---------- foot ---------- */
+.foot {
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000060;
+}
+
+.foot-copyright {
+    font-weight: 600;
+}
+
+.foot-date {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+/* ---------- 侧边滚动条 ---------- */
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+}
+
+/* -------------------- FMBOY -------------------- */
+/* -------------------- ----- -------------------- */
