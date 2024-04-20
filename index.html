@@ -11,6 +11,12 @@
 
     <!-- -------------------- css -------------------- -->
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/FmboyHeader.css">
+    <link rel="stylesheet" href="./css/FmboyContent.css">
+    <link rel="stylesheet" href="./css/FmboyFooter.css">
+
+    <!-- -------------------- script -------------------- -->
+    <script src="https://fmboy.gitee.io/res/package/vue/vue@2.6.10/vue.min.js"></script>
 
     <!-- -------------------- title -------------------- -->
     <title>FMBOY</title>
@@ -23,20 +29,20 @@
     <main id="app">
 
         <!-- ---------- head ---------- -->
-        <div class="head">
-            <div class="head-box">
-                <div class="head-box-list">
-                    <a href="./page/home">进入主栈</a>
+        <header class="header">
+            <div class="header-box">
+                <div class="header-box-list">
+                    <a href="./page/CollectionStation">我的收藏站</a>
                 </div>
-                <div class="head-box-user">
+                <div class="header-box-user">
                     <img src="./public/resources/image/FatCat.jpg" alt="">
                     <span>FatCat-BOY</span>
                 </div>
             </div>
-        </div>
+        </header>
 
-        <!-- ---------- main ---------- -->
-        <div class="main">
+        <!-- ---------- content ---------- -->
+        <div class="content">
             <div class="main-title">
                 <div>
                     <h1>FatCat-BOY 小栈</h1>
@@ -72,19 +78,18 @@
             </div>
         </div>
 
-        <!-- ---------- foot ---------- -->
-        <div class="foot">
-            <div>
-                <p class="foot-copyright">© 2024 版权所有 FatCat-BOY</p>
-                <p class="foot-date">&lt;2024.01.01--2024.02.14&gt;</p>
+        <!-- ---------- footer ---------- -->
+        <footer class="footer">
+            <div class="footer-box">
+                <p class="footer-copyright">© 2024 版权所有 FatCat-BOY</p>
+                <p class="footer-date">&lt;2024.01.01--2024.04.20&gt;</p>
+                <P class="footer-version">网站版本：1.0.5</P>
             </div>
-        </div>
+        </footer>
 
     </main>
 
-
     <!-- -------------------- script -------------------- -->
-    <script src="https://fmboy.gitee.io/res/vue/vue@2.7.15/vue.js"></script>
     <script src="./js/index.js"></script>
 
 </body>

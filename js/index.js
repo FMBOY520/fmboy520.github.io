@@ -15,6 +15,7 @@ const app = new Vue({
                 { url: 'https://fanyi.baidu.com/', img: 'https://fanyi-cdn.cdn.bcebos.com/webStatic/translation/img/favicon/favicon.ico', text: '百度翻译' },
                 { url: 'https://www.bilibili.com/', img: 'https://www.bilibili.com/favicon.ico', text: '哔哩哔哩' },
                 { url: 'https://www.csdn.net/', img: 'https://g.csdnimg.cn/static/logo/favicon32.ico', text: 'CSDN' },
+                { url: 'https://chat18.aichatos.xyz/', img: 'https://chat18.aichatos.xyz/favicon.ico', text: 'AIchatOS' },
             ],
         ]
     },
